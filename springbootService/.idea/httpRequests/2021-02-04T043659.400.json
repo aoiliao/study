@@ -1,0 +1,8 @@
+{
+  "timestamp": 1612427819677,
+  "status": 400,
+  "error": "Bad Request",
+  "exception": "org.springframework.http.converter.HttpMessageNotReadableException",
+  "message": "Required request body is missing: public void com.kotei.sun.controller.ServiceController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.kotei.sun.entity.ServiceInfo)",
+  "path": "/service/hello"
+}

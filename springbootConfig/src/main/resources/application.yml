@@ -1,0 +1,25 @@
+server:
+  port: 8004
+spring:
+  application:
+    name: springbootConfig
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://172.16.0.120/SmartCity/Pegasus/Web
+          # 对应 {label} 部分，即 Git 的分支
+          # 仓库文件夹名称，多个以逗号分隔
+          username: aol4473
+          password: kotei$123
+          default-label: Pegasusweb_hj
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5000/eureka/
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 30
