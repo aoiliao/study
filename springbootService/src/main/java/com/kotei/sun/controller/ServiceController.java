@@ -36,5 +36,11 @@ public class ServiceController {
         return "Service1:Welcome " + serviceInfo.getName() + " !";
     }
 
+    @RequestMapping(value = "test")
+    public String hello() {
+
+        return "Service1:Welcome!";
+    }
+
 
 }

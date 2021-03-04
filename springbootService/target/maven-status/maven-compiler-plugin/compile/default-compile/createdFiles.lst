@@ -1,9 +1,0 @@
-com\kotei\ComsumerClientApplication.class
-com\kotei\sun\entity\ServiceInfo.class
-com\kotei\common\utils\JsonMapper$2.class
-com\kotei\sun\controller\ServiceController.class
-com\kotei\common\entity\RestfulResult.class
-com\kotei\common\utils\JsonUtils.class
-com\kotei\common\utils\CommUtils.class
-com\kotei\common\utils\JsonMapper$1.class
-com\kotei\common\utils\JsonMapper.class
