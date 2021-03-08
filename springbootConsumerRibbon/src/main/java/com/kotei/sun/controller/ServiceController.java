@@ -1,46 +1,33 @@
 package com.kotei.sun.controller;
 
-import com.kotei.common.entity.RestfulResult;
-import com.kotei.common.utils.CommUtils;
 import com.kotei.sun.entity.ServiceInfo;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.web.client.RestTemplate;
 
 @RestController
 @RequestMapping(value = "service")
 public class ServiceController {
 
-    @RequestMapping(value = "hello")
-    public void login(HttpServletRequest request, HttpServletResponse response,
-                      @RequestBody ServiceInfo serviceInfo) {
+    @Autowired
+    RestTemplate restTemplate;
 
-        RestfulResult restfulResult = new RestfulResult();
+    @Value("${server.port}")
+    String port;
 
-        try {
-            restfulResult.setData("Service1:Welcome " + serviceInfo.getName() + "!");
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        CommUtils.printDataJason(response, restfulResult);
+    @RequestMapping("/consumerServiceRibbon")
+    @HystrixCommand(fallbackMethod="consumerServiceRibbonFallback")
+    public String consumerServiceRibbon(@RequestBody ServiceInfo serviceInfo){
+        String result = this.restTemplate.postForObject("http://springbootService2/service/rest", serviceInfo, String.class);
+        return result;
     }
 
-    @RequestMapping(value = "rest")
-    public String rest(@RequestBody ServiceInfo serviceInfo) {
-
-        return "Service1:Welcome " + serviceInfo.getName() + " !";
+    public String consumerServiceRibbonFallback(@RequestBody ServiceInfo serviceInfo){
+        return "consumerServiceRibbon异常，端口：" + port + "，Name=" + serviceInfo.getName();
     }
-
-    @RequestMapping(value = "test")
-    public String hello() {
-
-        return "Service1:Welcome!";
-    }
-
 
 }

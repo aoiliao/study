@@ -4,6 +4,7 @@ import com.kotei.common.entity.RestfulResult;
 import com.kotei.common.utils.CommUtils;
 import com.kotei.sun.client.ServiceFeignClient;
 import com.kotei.sun.entity.ServiceInfo;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

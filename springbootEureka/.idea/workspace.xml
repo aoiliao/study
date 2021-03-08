@@ -2,10 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6956d87a-10a0-48fa-8940-9ca8eef0570a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/study.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootConsumerFeign/src/main/java/com/kotei/sun/client/HelloServiceFallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootConsumerFeign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootConsumerFeign/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootConsumerFeign/src/main/java/com/kotei/ComsumerClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootConsumerFeign/src/main/java/com/kotei/ComsumerClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootConsumerFeign/src/main/java/com/kotei/sun/client/ServiceFallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootConsumerFeign/src/main/java/com/kotei/sun/client/ServiceFallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootConsumerFeign/src/main/java/com/kotei/sun/client/ServiceFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootConsumerFeign/src/main/java/com/kotei/sun/client/ServiceFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootConsumerFeign/src/main/java/com/kotei/sun/controller/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootConsumerFeign/src/main/java/com/kotei/sun/controller/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootConsumerFeign/target/classes/com/kotei/ComsumerClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootConsumerFeign/target/classes/com/kotei/ComsumerClientApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootConsumerFeign/target/classes/com/kotei/sun/controller/ServiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootConsumerFeign/target/classes/com/kotei/sun/controller/ServiceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootConfig/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootConfig/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootConsumerRibbon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootConsumerRibbon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootConsumerRibbon/src/main/java/com/kotei/ComsumerClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootConsumerRibbon/src/main/java/com/kotei/ComsumerClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootConsumerRibbon/src/main/java/com/kotei/sun/controller/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootConsumerRibbon/src/main/java/com/kotei/sun/controller/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootConsumerRibbon/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootConsumerRibbon/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootConsumerRibbon/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootConsumerRibbon/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootConsumerRibbon/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootConsumerRibbon/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootConsumerRibbon/target/classes/com/kotei/ComsumerClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootConsumerRibbon/target/classes/com/kotei/ComsumerClientApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootConsumerRibbon/target/classes/com/kotei/sun/controller/ServiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootConsumerRibbon/target/classes/com/kotei/sun/controller/ServiceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootService/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootService2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootService2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

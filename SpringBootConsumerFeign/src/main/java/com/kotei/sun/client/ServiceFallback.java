@@ -4,6 +4,9 @@ import com.kotei.common.entity.RestfulResult;
 import com.kotei.sun.entity.ServiceInfo;
 import org.springframework.stereotype.Component;
 
+/**
+ * 服务的降级
+ */
 @Component
 public class ServiceFallback implements ServiceFeignClient {
 
