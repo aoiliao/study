@@ -1,5 +1,6 @@
 package com.kotei;
 
+import com.codingapi.txlcn.tc.config.EnableDistributedTransaction;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
@@ -10,6 +11,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 @ServletComponentScan(basePackages = {"com.kotei.*"})
 @EnableDiscoveryClient
 @RefreshScope
+@EnableDistributedTransaction
 public class ComsumerClientApplication {
 
     public static void main(String[] args) {

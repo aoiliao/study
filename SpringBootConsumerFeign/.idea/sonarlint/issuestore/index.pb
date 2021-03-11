@@ -9,3 +9,5 @@ f
 6src/main/java/com/kotei/ComsumerClientApplication.java,f\d\fd0d318c24191bb3a740fe455f62965bc363c259
 j
 :src/main/java/com/kotei/sun/client/ServiceFeignClient.java,f\3\f332b858784a55751a0b17c05a3e69cb52d66a14
+c
+3src/main/java/com/kotei/sun/entity/ServiceInfo.java,e\8\e8abe1fd79fa3640fb86cc7017de92b2c16ac4fb

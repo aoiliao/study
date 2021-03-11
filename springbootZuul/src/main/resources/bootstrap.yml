@@ -1,6 +1,0 @@
-#springbootService2   8005
-spring:
-  cloud:
-    config:
-      uri : http://localhost:8004/
-      profile : release
