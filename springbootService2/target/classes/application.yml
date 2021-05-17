@@ -1,0 +1,26 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name : springbootService2
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+
+# Ĭ��֮����ΪTM�ı���Ĭ�϶˿�
+tx-lcn:
+  client:
+    manager-address: 127.0.0.1:8070
+  # ������־,Ĭ��Ϊfalse
+  logger:
+    enabled: true
+    driver-class-name: com.mysql.jdbc.Driver
+    jdbc-url: jdbc:mysql://127.0.0.1:3306/tx-manager?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    level.com.codingapi.txlcn: DEBUG

@@ -18,7 +18,7 @@ public class ServiceFallbackProvider implements FallbackProvider {
     public String getRoute() {
         // 这里只针对"springbootService"服务进行熔断
         // 如果需要针对所有服务熔断，则return "*"
-        return "springbootService2";
+        return "*";
     }
 
     @Override
@@ -49,7 +49,8 @@ public class ServiceFallbackProvider implements FallbackProvider {
             @Override
             // 发生熔断式，返回的信息
             public InputStream getBody() throws IOException {
-                return new ByteArrayInputStream("Sorry, the service is unavailable now.".getBytes());
+                String str = "route:" + route + "Sorry, the service is unavailable now.";
+                return new ByteArrayInputStream(str.getBytes());
             }
 
             @Override

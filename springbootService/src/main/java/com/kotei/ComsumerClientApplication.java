@@ -9,6 +9,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 @SpringBootApplication
 @ServletComponentScan(basePackages = {"com.kotei.*"})
 @EnableDiscoveryClient
+@RefreshScope
 public class ComsumerClientApplication {
 
     public static void main(String[] args) {

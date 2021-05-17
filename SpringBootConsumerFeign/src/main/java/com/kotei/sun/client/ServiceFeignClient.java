@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Component
-@FeignClient(value = "springbootService2", fallback=ServiceFallback.class)
+@FeignClient(value = "service2", fallback=ServiceFallback.class)
 public interface ServiceFeignClient {
 
     @RequestMapping(value = "/service/hello")

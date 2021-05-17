@@ -11,3 +11,11 @@ j
 :src/main/java/com/kotei/sun/client/ServiceFeignClient.java,f\3\f332b858784a55751a0b17c05a3e69cb52d66a14
 c
 3src/main/java/com/kotei/sun/entity/ServiceInfo.java,e\8\e8abe1fd79fa3640fb86cc7017de92b2c16ac4fb
+h
+8src/main/java/com/kotei/common/entity/RestfulResult.java,2\f\2f69e7f8adc61b2a07b5671b4ca1f9c92bfac831
+c
+3src/main/java/com/kotei/common/utils/CommUtils.java,7\b\7bff9048ee7b11c96bd8060d884d1accc47f247a
+c
+3src/main/java/com/kotei/common/utils/JsonUtils.java,4\d\4d0458c62de054e5e5abca4846815fd4a78b6f80
+d
+4src/main/java/com/kotei/common/utils/JsonMapper.java,d\9\d9375b733dfb2665815733b952ba275238b8c609
